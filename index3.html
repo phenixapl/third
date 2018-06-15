@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>form</title>
+	<style>
+		
+		input{
+			float:right;
+			margin-top:10px; 
+		}
+		label{
+			margin:10px;
+			margin-right:10px;
+			margin-left: 10px;
+			margin-bottom:50px;
+			margin-top:30px;
+		}
+		fieldset{ 
+			background-color: #A52A2A; 
+			margin:10px;
+			margin-left:45% ;
+			margin-right:10px;
+			margin-bottom:50px;
+			margin-top:20px;
+			align-content: center;
+			border-radius: 15px;
+			box-shadow: 7px 7px 7px;
+			opacity: 0.9;
+			font-family:Arial; 
+			font-size:20px;
+			font-weight: 10px;
+		}
+
+
+	</style>
+</head>
+<body background="assets/hotel.jpg">		
+	<fieldset style="width:9%"; align="center">
+		<h1>IT Hottel</h1>
+			<h3>Log in</h3>
+			<form action="">
+				<label>Name<input type="text" name="name" align="center"></label><br/>
+				<label>Password<input type="password" name="pass" align="center"></label><br/>
+				<input type="submit" value="Send" align="center"/>
+		</form>
+	</fieldset>
+	<hr>
+	<fieldset style="width: 9%"; align="center">
+		<form action="">
+			<label> Name </label><input type="text" name="name"><br>
+			<label> Number </label><input type="text" name="number" value=""><br>
+			<label> Email</label><input type="email" ><br>
+			<label> Age </label><input type="number" name="age"><br>
+			<div style="margin: 10px">
+				<input type="radio" name="gender" value="male">Male <br>	
+				<input type="radio" name="gender" value="female">Female<br/>
+			</div>
+			<b> Specialty:</b><br>
+				<input type="radio" name="animal" value="animal"> Animal <br> 
+				<input type="radio" name="allergy" value="allergy">Allergy <br>
+				<input type="radio" name="baggage" value="baggage">Baggage <br>
+
+			<label><b>Your wish:</b><textarea maxlength="100" rows="3"></textarea></label><br>
+			<label> Food <select  name="favorite kitchen" id="">
+				<option disabled>choose favorite</option>
+				<option value="Italian">Italian</option>
+				<option value="France">France</option>
+				<option value="Amaerican">American</option>
+				<option value="Chaina">Chaina</option>
+			</select></label><br>
+			<input type="submit" value="Send"/>
+		</form>
+	</fieldset>
+</body>
+</html>
